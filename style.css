@@ -1,0 +1,507 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Root Variables */
+:root{
+--primary-color:#3b141c;
+--secondary-color:#f3961c;
+--white-color:#ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+/* Navbar */
+
+header{
+background:var(--primary-color);
+}
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:20px 80px;
+}
+
+.logo-text{
+color:white;
+font-size:24px;
+font-weight:600;
+}
+
+.nav-menu{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.nav-link{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+.nav-link:hover{
+color:var(--secondary-color);
+}
+
+/* Hero Section */
+
+.hero-section{
+background:var(--primary-color);
+min-height:90vh;
+display:flex;
+align-items:center;
+}
+
+.section-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 80px;
+}
+
+/* Section Title */
+
+.section-title{
+text-align:center;
+position:relative;
+}
+
+.section-title::after{
+content:"";
+width:80px;
+height:5px;
+display:block;
+margin:10px auto 0;
+border-radius:5px;
+background:var(--secondary-color);
+}
+
+/* Hero Details */
+
+.hero-details{
+color:white;
+max-width:500px;
+}
+
+.title{
+font-size:50px;
+color:var(--secondary-color);
+}
+
+.subtitle{
+font-size:28px;
+margin-top:10px;
+}
+
+.description{
+margin:20px 0;
+font-size:16px;
+}
+
+/* Buttons */
+
+.buttons{
+display:flex;
+gap:15px;
+}
+
+.button{
+display:inline-block;
+padding:10px 20px;
+border-radius:25px;
+text-decoration:none;
+font-weight:500;
+cursor:pointer;
+}
+
+.order-now{
+background:var(--secondary-color);
+color:white;
+}
+
+.contact-us{
+border:2px solid white;
+color:white;
+}
+
+.order-now:hover{
+background:white;
+color:var(--secondary-color);
+}
+
+.contact-us:hover{
+background:white;
+color:var(--secondary-color);
+}
+
+/* Hero Image */
+
+.hero-image-wrapper img{
+width:400px;
+}
+
+/* Fix click issue */
+
+.hero-image-wrapper{
+pointer-events:none;
+}
+
+/* About Section */
+
+.about-section{
+padding:120px 0;
+background:papayawhip;
+}
+
+.about-section .section-content{
+display:flex;
+gap:50px;
+align-items:center;
+justify-content:space-between;
+}
+
+.about-image{
+width:300px;
+height:300px;
+object-fit:cover;
+border-radius:50%;
+}
+
+.about-details .text{
+line-height:30px;
+margin:30px 0;
+text-align:center;
+font-size:16px;
+}
+
+.social-link-list{
+display:flex;
+gap:25px;
+justify-content:center;
+}
+
+.social-link{
+color:var(--primary-color);
+font-size:24px;
+}
+
+.social-link:hover{
+color:var(--secondary-color);
+}
+
+/* Menu Section */
+
+.menu-section{
+color:white;
+background:black;
+padding:60px 0;
+}
+
+.menu-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+}
+
+.menu-item{
+width:250px;
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.menu-image{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.name{
+margin:12px 0;
+font-size:22px;
+font-weight:600;
+}
+
+.text{
+font-size:16px;
+line-height:1.6;
+max-width:220px;
+}
+/* Testimonials section styling */
+.testimonial-section {
+    padding: 50px 0 100px;
+    background-color: var(--light-pink-color);
+}
+
+/* Slider container */
+.slider-container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* List ko horizontal banaya */
+.testimonials-list {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* Individual card */
+.testimonial {
+    min-width: 300px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* Hover effect 🔥 */
+.testimonial:hover {
+    transform: translateY(-10px);
+}
+
+/* Image */
+.testimonial .user-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* Name */
+.testimonial .name {
+    margin-bottom: 10px;
+    font-size: var(--font-size-m);
+    font-weight: 600;
+}
+
+/* Feedback */
+.testimonial .feedback {
+    line-height: 24px;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+}
+
+.testimonial-section .swiper-button-prev,
+.testimonial-section .swiper-button-next {
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+}
+
+.testimonial-section .swiper-button-prev:hover,
+.testimonial-section .swiper-button-next:hover {
+    color: var(--primary-color);
+}
+
+/* Gallery Section */
+.gallery-section{
+    padding: 80px 0 100px;
+    background: #f9f9f9;
+}
+
+/* Title */
+.gallery-section .section-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Gallery Grid */
+.gallery-section .gallery-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Gallery Item */
+.gallery-section .gallery-item{
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Image */
+.gallery-section .gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* Hover Zoom Effect */
+.gallery-section .gallery-item:hover img{
+    transform: scale(1.1);
+}
+
+/* Overlay Effect */
+.gallery-section .gallery-item::after{
+    content: "View Coffee";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+/* Show Overlay on Hover */
+.gallery-section .gallery-item:hover::after{
+    opacity: 1;
+}
+
+/* Contact us section styling */
+.contact-section{
+    padding: 50px 0 100px;
+    background: lightpink;
+}
+
+.contact-section .section-content{
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap; /* responsive ke liye */
+}
+
+/* Contact Info */
+.contact-info-list{
+    list-style: none;
+}
+
+.contact-info{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Form Styling */
+.contact-form{
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Textarea alag se */
+textarea.form-input{
+    height: 120px;
+    resize: none;
+}
+
+/* Button */
+.submit-button{
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.submit-button:hover{
+    background: #333;
+}
+
+/* Footer */
+.footer-section{
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-section .section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Social Icons */
+.social-link-list{
+    display: flex;
+    gap: 15px;
+}
+
+.social-link{
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-link:hover{
+    color: lightpink;
+    transform: scale(1.2);
+}
+
+/* Policy Links */
+.policy-text{
+    font-size: 14px;
+}
+
+.policy-link{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.policy-link:hover{
+    text-decoration: underline;
+}
+
+.separator{
+    color: #aaa;
+}
